@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(192, 201, 209);
+}
+
+#sketchpad {
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 100px auto 15px auto;
+    background-color: white;     
+
+}
+
+.cell {
+    border: 1px solid whitesmoke;
+}
+
+#slider-container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.slider {
+    
+    -webkit-appearance: none;
+    appearance: none;
+    height: 25px;
+    width: 600px;
+    background: rgba(200, 255, 238, 0.726);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+#slider-value {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb { 
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.buttons-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#clearBtn {
+    padding: 15px 15px;
+    font-size: large;
+    width: 250px;
+    border-radius: 8px;
+    border: none;
+    margin-right: 10px;
+    background-color: #333836;
+    color: white;
+
+}
+
+#rainbowModeBtn{
+    padding: 15px 15px;
+    font-size: large;
+    width: 250px;
+    border-radius: 8px;
+    border: none;
+}
+
+#clearBtn:hover {
+    background-color: rgb(105, 115, 122);
+}
+
+#rainbowModeBtn:hover {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    color: white;
+    font-size: 20px;
+}
